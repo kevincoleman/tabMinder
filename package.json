@@ -1,0 +1,25 @@
+{
+  "name": "tabMinder",
+  "version": "1.0.0",
+  "description": "A web application for managing customer tabs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kevin.n.coleman@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "ejs": *,
+    "express": "^4.13.3",
+    "fs": "0.0.2",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1",
+    "mongo": "^0.1.0",
+    "mongo-express": "^0.28.4",
+    "mongodb": "^2.0.52",
+    "node-sass": "^3.4.2",
+    "request": *,
+    "socketio": "^1.0.0"
+  }
+}

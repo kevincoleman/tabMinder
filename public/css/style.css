@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #464646;
+  font-family: helvetica, arial, sans-serif; }
+
+body {
+  overflow: hidden; }
+
+form#io {
+  margin: 5em 0 2em; }
+  form#io input {
+    border: none;
+    width: 50%;
+    height: 3em;
+    line-height: 3em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .2em; }
+  form#io .payment {
+    background-color: rgba(30, 200, 30, 0.5);
+    text-align: right;
+    padding: 0 1em 0 0;
+    margin: 0 0 0 -1em; }
+  form#io .purchase {
+    background-color: rgba(235, 50, 50, 0.5);
+    padding: 0 0 0 1em;
+    margin: 0 -1em 0 0; }
+
+#record .lineItem {
+  width: 50%;
+  clear: both; }
+
+#record .credit {
+  float: left;
+  text-align: right;
+  padding: 0 1em 0 0;
+  margin: 0 0 0 -1em; }
+
+#record .debit {
+  float: right;
+  padding: 0 0 0 1em;
+  margin: 0 -1em 0 0; }
