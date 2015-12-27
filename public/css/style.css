@@ -7,8 +7,14 @@
 body {
   overflow: hidden; }
 
+h1#patronName {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin: 1.5em auto 0; }
+
 form#io {
-  margin: 5em 0 2em; }
+  margin: 3em 0 2em; }
   form#io input {
     border: none;
     width: 50%;
@@ -17,15 +23,29 @@ form#io {
     color: white;
     text-transform: uppercase;
     letter-spacing: .2em; }
+  form#io ::-webkit-input-placeholder {
+    color: white; }
+  form#io :-moz-input-placeholder {
+    color: white; }
+  form#io ::-moz-input-placeholder {
+    color: white; }
+  form#io :-ms-input-placeholder {
+    color: white; }
+  form#io input[type=submit] {
+    visibility: hidden;
+    height: 0;
+    width: 0; }
   form#io .payment {
     background-color: rgba(30, 200, 30, 0.5);
     text-align: right;
     padding: 0 1em 0 0;
-    margin: 0 0 0 -1em; }
+    margin: 0 0 0 -1em;
+    -webkit-box-shadow: inset 10px 3px 10px rgba(0, 0, 0, 0.2); }
   form#io .purchase {
     background-color: rgba(235, 50, 50, 0.5);
     padding: 0 0 0 1em;
-    margin: 0 -1em 0 0; }
+    margin: 0 -1em 0 0;
+    -webkit-box-shadow: inset -10px 3px 10px rgba(0, 0, 0, 0.2); }
 
 #record .lineItem {
   width: 50%;

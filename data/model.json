@@ -8,6 +8,7 @@
   },
   "transaction": {
     "date": "",
-    "amount": 0
+    "amount": 0,
+    "type": ""
   }
 }

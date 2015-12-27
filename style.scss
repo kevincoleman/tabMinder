@@ -9,8 +9,15 @@ body {
   overflow: hidden;
 }
 
+h1#patronName {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin: 1.5em auto 0;
+}
+
 form#io {
-  margin: 5em 0 2em;;
+  margin: 3em 0 2em;;
   input {
     border: none;
     width: 50%;
@@ -20,16 +27,35 @@ form#io {
     text-transform: uppercase;
     letter-spacing: .2em;
   }
+  ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 1);
+  }
+  :-moz-input-placeholder {
+    color: rgba(255, 255, 255, 1);
+  }
+  ::-moz-input-placeholder {
+    color: rgba(255, 255, 255, 1);
+  }
+  :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 1);
+  }
+  input[type=submit] {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
   .payment {
     background-color: rgba(30, 200, 30, .5);
     text-align: right;
     padding: 0 1em 0 0;
     margin: 0 0 0 -1em;
+    -webkit-box-shadow: inset 10px 3px 10px rgba(0, 0, 0, 0.2);
   }
   .purchase {
     background-color: rgba(235, 50, 50, .5);
     padding: 0 0 0 1em;
     margin: 0 -1em 0 0;
+    -webkit-box-shadow: inset -10px 3px 10px rgba(0, 0, 0, 0.2);
   }
 }
 
