@@ -1,0 +1,14 @@
+{
+  "patron": {
+    "firstName": "",
+    "lastName": "",
+    "email": "",
+    "transactions": [
+      {
+        "date": "",
+        "amount": 0
+      }
+    ],
+    "delinquent": false
+  }
+}
