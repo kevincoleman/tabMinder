@@ -1,31 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
 * {
   margin: 0;
   padding: 0;
   color: rgba(70, 70, 70, 1);
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Droid Sans Mono', courier, sans-serif;
 }
 
 body {
   overflow: hidden;
 }
 
-h1#patronName {
+#patronName {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .2em;
   margin: 1.5em auto 0;
+  color: rgba(100, 100, 100, .7);
+  text-shadow: 1px 4px 6px #fff, 0 0 0 #000, 1px 4px 6px #fff;
+}
+
+::-moz-selection { background: #5af; color: #fff; text-shadow: none; }
+::selection { background: #5af; color: #fff; text-shadow: none; }
+
+#balance {
+  text-align: center;
+  margin: .5em auto 0em;
+  font-family: 'Droid Sans Mono', courier, sans-serif;
 }
 
 form#io {
-  margin: 3em 0 2em;;
+  margin: 3em 0 2em;
   input {
     border: none;
     width: 50%;
     height: 3em;
-    line-height: 3em;
+    line-height: 3.1em;
     color: rgba(255, 255, 255, 1);
     text-transform: uppercase;
     letter-spacing: .2em;
+    font-family: 'Droid Sans Mono', courier, sans-serif;
+    font-weight: bold;
   }
   ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 1);
@@ -69,10 +84,12 @@ form#io {
     text-align: right;
     padding: 0 1em 0 0;
     margin: 0 0 0 -1em;
+    font-family: 'Droid Sans Mono', courier, sans-serif;
   }
   .debit {
     float: right;
     padding: 0 0 0 1em;
     margin: 0 -1em 0 0;
+    font-family: 'Droid Sans Mono', courier, sans-serif;
   }
 }

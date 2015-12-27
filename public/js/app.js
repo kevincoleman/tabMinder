@@ -3,8 +3,11 @@ var app = angular.module('tabMinder', []);
 app.controller('MainCtrl', [
   '$scope',
   function($scope){
+    $scope.delinquentAmount = 100.00;
     $scope.patronName = 'Kevin Coleman';
     $scope.lineItems = [];
+    $scope.balance = 82.03;
+    $scope.patronStatus = $scope.balance / $scope.delinquentAmount;
     $scope.addLineItem = function() {
       if(
         (!$scope.credit && !$scope.debit) ||

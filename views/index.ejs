@@ -6,10 +6,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/scripts.js"></script>
   </head>
   <body ng-app="tabMinder" ng-controller="MainCtrl">
     <h1 id="patronName">{{patronName}}</h1>
+    <h2 id="balance" style="color: rgba({{(255 * patronStatus)| number: 0}}, 0, 0, 1);">{{balance}}</h2>
     <form id="io" ng-submit="addLineItem()">
       <input class="payment" type="text" placeholder="payment" ng-model="credit"><!--
       --><input class="purchase" type="text" placeholder="purchase" ng-model="debit">
