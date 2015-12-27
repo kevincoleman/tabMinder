@@ -3,12 +3,11 @@
     "firstName": "",
     "lastName": "",
     "email": "",
-    "transactions": [
-      {
-        "date": "",
-        "amount": 0
-      }
-    ],
+    "transactions": [],
     "delinquent": false
+  },
+  "transaction": {
+    "date": "",
+    "amount": 0
   }
 }
