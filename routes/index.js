@@ -6,7 +6,7 @@ var fs = require ('fs');
 
 router.get('/', function(req, res) {
   sass.render({
-    file: './style.scss',
+    file: './views/style.scss',
     outFile: './public/css/style.css'
   }, function(err, result){
     if (!err) {

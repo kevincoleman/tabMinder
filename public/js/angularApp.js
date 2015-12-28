@@ -1,13 +1,22 @@
 var app = angular.module('tabMinder', []);
 
+app.factory('patron', [function(){
+    var p = {
+      firstName: "Kevin",
+      lastName: "Coleman"
+    };
+  return p;
+}]);
+
 app.controller('MainCtrl', [
   '$scope',
-  function($scope){
-    $scope.delinquentAmount = 100.00;
-    $scope.patronName = 'Kevin Coleman';
-    $scope.lineItems = [];
-    $scope.balance = 82.03;
-    $scope.patronStatus = $scope.balance / $scope.delinquentAmount;
+  'patron',
+  function($scope, patron){
+    $scope.delinquentAmount = patron.delinquentAmount;
+    $scope.patronName = patron.firstName + " " + patron.lastName;
+    $scope.lineItems = patron.transactions;
+    $scope.balance = patron.balance;
+    
     $scope.addLineItem = function() {
       if(
         (!$scope.credit && !$scope.debit) ||

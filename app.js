@@ -27,10 +27,8 @@ app.get('/', require('./routes/index'));
 
 // MongoClient.connect(url, function(err, db) {
 //   assert.equal(null, err);
-//   Db.insertDocument(db, dataModel.patron, function(){
-//     Db.retrieveDocument(db, ObjectId("567f1ddeeb26625bbccd9f58"), function() {
-//       db.close();
-//     });
+//   Db.insertDocument(db, dataModel.settings, function(){
+//     db.close();
 //   });
 // });
 
