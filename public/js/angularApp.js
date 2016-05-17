@@ -3,7 +3,12 @@ var app = angular.module('tabMinder', []);
 app.factory('patron', [function(){
     var p = {
       firstName: "Kevin",
-      lastName: "Coleman"
+      lastName: "Coleman",
+      username: "kevincoleman",
+      email: "kevin.coleman@stuff.com",
+      balance: 200.01,
+      delinquent: false,
+      transactions: []
     };
   return p;
 }]);
